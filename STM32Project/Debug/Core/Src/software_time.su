@@ -1,0 +1,5 @@
+software_time.c:18:6:display7SEG	16	static
+software_time.c:115:6:setTimer1	16	static
+software_time.c:121:6:setTimer2	16	static
+software_time.c:127:6:setTimer3	16	static
+software_time.c:132:6:timeRun	4	static
