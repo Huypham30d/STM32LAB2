@@ -199,7 +199,9 @@ void setTimer4(int duration){
 
 int index_led_matrix = 0;
 uint8_t matrix_buffer [8] = {0x01 , 0x02 , 0x03 , 0x04 , 0x05 , 0x06 , 0x07 , 0x08 };
-void updateLEDMatrix (int index );
+void updateLEDMatrix (int index ){
+	HAL_GPIO_WritePin(ENM0_GPIO_Port, ENM0_Pin_, PinState)
+}
 void displayMatrix(int row);
 void setCol(uint8_t value);
 void setMatrix();
