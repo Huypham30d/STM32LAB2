@@ -192,17 +192,17 @@ void setTimer3(int duration){
 
 void timeRun(){
 	if (timer1_counter > 0){
-			timer1_counter--;
-			if (timer1_counter <= 0 ){
-				timer1_flag = 1;
-			}
+		timer1_counter--;
+		if (timer1_counter <= 0 ){
+			timer1_flag = 1;
 		}
-		if (timer2_counter > 0){
-				timer2_counter--;
-				if (timer2_counter <= 0 ){
-					timer2_flag = 1;
-				}
-			}
+	}
+	if (timer2_counter > 0){
+		timer2_counter--;
+		if (timer2_counter <= 0 ){
+			timer2_flag = 1;
+		}
+	}
 		if (timer3_counter > 0){
 				timer3_counter--;
 				if (timer3_counter <= 0 ){

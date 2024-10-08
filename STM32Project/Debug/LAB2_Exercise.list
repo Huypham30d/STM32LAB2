@@ -1329,45 +1329,45 @@ void timeRun(){
  800097a:	681b      	ldr	r3, [r3, #0]
  800097c:	2b00      	cmp	r3, #0
  800097e:	dd0b      	ble.n	8000998 <timeRun+0x24>
-			timer1_counter--;
+		timer1_counter--;
  8000980:	4b17      	ldr	r3, [pc, #92]	; (80009e0 <timeRun+0x6c>)
  8000982:	681b      	ldr	r3, [r3, #0]
  8000984:	3b01      	subs	r3, #1
  8000986:	4a16      	ldr	r2, [pc, #88]	; (80009e0 <timeRun+0x6c>)
  8000988:	6013      	str	r3, [r2, #0]
-			if (timer1_counter <= 0 ){
+		if (timer1_counter <= 0 ){
  800098a:	4b15      	ldr	r3, [pc, #84]	; (80009e0 <timeRun+0x6c>)
  800098c:	681b      	ldr	r3, [r3, #0]
  800098e:	2b00      	cmp	r3, #0
  8000990:	dc02      	bgt.n	8000998 <timeRun+0x24>
-				timer1_flag = 1;
+			timer1_flag = 1;
  8000992:	4b14      	ldr	r3, [pc, #80]	; (80009e4 <timeRun+0x70>)
  8000994:	2201      	movs	r2, #1
  8000996:	601a      	str	r2, [r3, #0]
-			}
 		}
-		if (timer2_counter > 0){
+	}
+	if (timer2_counter > 0){
  8000998:	4b13      	ldr	r3, [pc, #76]	; (80009e8 <timeRun+0x74>)
  800099a:	681b      	ldr	r3, [r3, #0]
  800099c:	2b00      	cmp	r3, #0
  800099e:	dd0b      	ble.n	80009b8 <timeRun+0x44>
-				timer2_counter--;
+		timer2_counter--;
  80009a0:	4b11      	ldr	r3, [pc, #68]	; (80009e8 <timeRun+0x74>)
  80009a2:	681b      	ldr	r3, [r3, #0]
  80009a4:	3b01      	subs	r3, #1
  80009a6:	4a10      	ldr	r2, [pc, #64]	; (80009e8 <timeRun+0x74>)
  80009a8:	6013      	str	r3, [r2, #0]
-				if (timer2_counter <= 0 ){
+		if (timer2_counter <= 0 ){
  80009aa:	4b0f      	ldr	r3, [pc, #60]	; (80009e8 <timeRun+0x74>)
  80009ac:	681b      	ldr	r3, [r3, #0]
  80009ae:	2b00      	cmp	r3, #0
  80009b0:	dc02      	bgt.n	80009b8 <timeRun+0x44>
-					timer2_flag = 1;
+			timer2_flag = 1;
  80009b2:	4b0e      	ldr	r3, [pc, #56]	; (80009ec <timeRun+0x78>)
  80009b4:	2201      	movs	r2, #1
  80009b6:	601a      	str	r2, [r3, #0]
-				}
-			}
+		}
+	}
 		if (timer3_counter > 0){
  80009b8:	4b0d      	ldr	r3, [pc, #52]	; (80009f0 <timeRun+0x7c>)
  80009ba:	681b      	ldr	r3, [r3, #0]
