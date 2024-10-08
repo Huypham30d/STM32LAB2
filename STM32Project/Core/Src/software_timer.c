@@ -10,7 +10,7 @@
 int hour = 15, minute = 8, second = 50;
 
 int index_led = 0;
-int led_buffer[4] = {1,2,3,4};
+int led_buffer[4] = {1,5,3,4};
 
 int timer1_flag = 0;
 int timer1_counter = 0;

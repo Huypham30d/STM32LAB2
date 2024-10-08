@@ -122,8 +122,8 @@ int main(void)
   setTimer2(25);
  800016c:	2019      	movs	r0, #25
  800016e:	f000 fbd7 	bl	8000920 <setTimer2>
-  setTimer3(100);
- 8000172:	2064      	movs	r0, #100	; 0x64
+  setTimer3(50);
+ 8000172:	2032      	movs	r0, #50	; 0x32
  8000174:	f000 fbe8 	bl	8000948 <setTimer3>
   while (1)
   {
@@ -176,8 +176,8 @@ int main(void)
  80001c4:	681b      	ldr	r3, [r3, #0]
  80001c6:	2b01      	cmp	r3, #1
  80001c8:	d1d6      	bne.n	8000178 <main+0x2c>
-		  setTimer3(100);
- 80001ca:	2064      	movs	r0, #100	; 0x64
+		  setTimer3(50);
+ 80001ca:	2032      	movs	r0, #50	; 0x32
  80001cc:	f000 fbbc 	bl	8000948 <setTimer3>
 		  setTimeronClock();
  80001d0:	f000 f93c 	bl	800044c <setTimeronClock>

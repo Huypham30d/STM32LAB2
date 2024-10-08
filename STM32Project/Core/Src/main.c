@@ -96,7 +96,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   setTimer1(100);
   setTimer2(25);
-  setTimer3(100);
+  setTimer3(50);
   while (1)
   {
 	  if (timer1_flag == 1){
@@ -112,7 +112,7 @@ int main(void)
 		  }
 	  }
 	  if (timer3_flag == 1){
-		  setTimer3(100);
+		  setTimer3(50);
 		  setTimeronClock();
 		  updateClockBuffer();
 	  }
